@@ -1,0 +1,9 @@
+services:
+  curls.sh:
+    container_name: curls.sh
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "26251:3000"
